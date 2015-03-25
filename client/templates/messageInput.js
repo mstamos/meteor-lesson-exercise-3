@@ -1,17 +1,16 @@
 Template.messageInput.events({
-        'submit .enter-message': function (event) {
+    'submit .enter-message': function (event, template) {
         event.preventDefault();
         var name = Meteor.user() ? Meteor.user().username : 'Anonymous';
-        var message = document.getElementById('message-input');
+        var message = template.find("#message-input").value;
 
-        if (message.value != '') {
+        if (message != '') {
             Messages.insert({
                 name: name,
-                message: message.value
+                message: message
             });
-
-            document.getElementById('message-input').value = '';
-            message.value = '';
+            template.find("#message-input").value = '';
+            message = '';
         }
     }
 });
