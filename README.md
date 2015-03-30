@@ -8,7 +8,7 @@ The goals of this exercise is to dive into Meteor's basics such as:
   <li>Publication/Subscription</li>
   <li>Add/Remove a package</li>
   <li>Add and configure Iron:router</li>
-  <li>Insert into Database</li>2
+  <li>Insert into Database</li>
   <li>Login via Facebook</li>
 </ul>
  which have been covered the Third Meteor Lesson. 
