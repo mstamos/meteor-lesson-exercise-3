@@ -1,0 +1,11 @@
+<template name="myMessages">
+	<div class="container">
+		<h1 class="text-center">Your messages {{username}}</h1>
+				{{#each messages}}
+			<div>
+				{{message}}
+			</div>
+		{{/each}}
+	</div>
+	
+</template>

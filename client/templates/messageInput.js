@@ -7,7 +7,8 @@ Template.messageInput.events({
         if (message != '') {
             Messages.insert({
                 name: name,
-                message: message
+                message: message,
+                owner: Meteor.userId()
             });
             template.find("#message-input").value = '';
             message = '';
